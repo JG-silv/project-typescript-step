@@ -1,0 +1,26 @@
+
+            {
+  "name": "projeto-typescript-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devfabioluiz/projeto-typescript-step.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devfabioluiz/projeto-typescript-step/issues"
+  },
+  "homepage": "https://github.com/devfabioluiz/projeto-typescript-step#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
+          
