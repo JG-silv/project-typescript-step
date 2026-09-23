@@ -1,9 +1,10 @@
 "use strict";
-const exemplo = {
-    nome: "Fabio",
+const minhaConta = {
+    titular: "Fabio",
     saldo: 3000,
 };
-function deposito(saldoCliente, valorDeposito) {
-    return saldoCliente + valorDeposito;
+function saque(saldoAtual, valorSaque) {
+    return saldoAtual - valorSaque;
 }
-console.log(deposito(exemplo.saldo, 152));
+const saldoFinal = saque(minhaConta.saldo, 500);
+console.log(`Saldo de ${minhaConta.titular}: ${saldoFinal}`);
