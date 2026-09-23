@@ -1,17 +1,18 @@
 
-type Pessoa = {
-  nome: string;
+type Conta = {
+  titular: string;
   saldo: number;
 };
 
-const exemplo: Pessoa = {
-  nome: "Fabio",
+const minhaConta: Conta = {
+  titular: "Fabio",
   saldo: 3000,
 };
 
-function deposito(saldoCliente: number, valorDeposito: number): number {
-  return saldoCliente + valorDeposito;
+function saque(saldoAtual: number, valorSaque: number): number {
+  return saldoAtual - valorSaque;
 }
 
-console.log(deposito(exemplo.saldo, 152));
-          
+const saldoFinal = saque(minhaConta.saldo, 500);
+
+console.log(`Saldo de ${minhaConta.titular}: ${saldoFinal}`);
